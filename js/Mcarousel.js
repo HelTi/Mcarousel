@@ -55,6 +55,14 @@
                         that.couldRun=true;
                     },that.options.durationtime)
                 }
+            });
+            //给第一张除外的图片样式，这样才会形成一进一出的效果
+            $.each(that.$element,function(i){
+                if(i!=0){
+                    that.$element.eq(i).css({
+                        left:that.moveWidth+"px"
+                    });
+                }
             })
             //设置定时器
             this.interval=setInterval(function(){
