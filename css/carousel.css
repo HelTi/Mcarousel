@@ -1,0 +1,65 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;}
+.clearfix{
+    display: table;
+    content: " ";
+    clear: both;
+}
+.clearfix:before,.clearfix:after{
+    clear: both;
+}
+.mytest{
+    width: 310px;
+    height: 220px;
+    margin: 200px auto;
+    position: relative;
+}
+
+.m-carousel{
+    width: 310px;
+    height: 220px;
+    overflow: hidden;
+}
+
+/*轮播按钮*/
+
+.m-carousel-inner{
+    width: 620px;
+    height: 220px;
+    background-color: #f60;
+    position: relative;
+}
+.m-carousel-inner .item{
+
+    position: absolute;
+    left:0;
+    top:0;
+}
+.btn-prev{
+   left: 0;
+}
+.btn-next{
+   right: 0;
+}
+.btn-prev ,.btn-next{
+    position: absolute;
+    width:30px;
+    height:30px;
+    display: block;
+    top:50%;
+    margin-top: -15px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    opacity: .5;
+
+  /*  z-index:12;*/
+    background-color: #1b6d85;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}

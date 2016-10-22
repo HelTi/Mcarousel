@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/normalize.css" rel="stylesheet"/>
+    <link href="css/carousel.css" rel="stylesheet"/>
+    <script src="js/jquery-3.1.0.min.js"></script>
+
+</head>
+<body>
+<div class="mytest">
+    <div class="m-carousel">
+        <div class="m-carousel-inner">
+            <div class="item">
+                <img src="images/1.png">
+            </div>
+            <div class="item" style="left: 310px;">
+                <img src="images/2.png">
+            </div>
+            <div class="item" style="left: 310px;">
+                <img src="images/3.png">
+            </div>
+            <div class="item" style="left: 310px;">
+                <img src="images/4.png">
+            </div>
+            <div class="item" style="left: 310px;">
+                <img src="images/5.png">
+            </div>
+        </div>
+        <a class="btn-prev">
+            <
+        </a>
+        <a class="btn-next">
+            >
+        </a>
+    </div>
+
+
+
+</div>
+
+</body>
+<script src="js/Mcarousel.js"></script>
+<script>
+    $(".m-carousel").mCol({
+        elenext:'.btn-next',
+        eleprev:'.btn-prev',
+        intervaltime:1000,
+        durationtime:500
+    });
+</script>
+</html>
