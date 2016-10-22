@@ -5,7 +5,7 @@
 
 <pre>
 <code>
-$(ele).CTtime({
+$(ele).mCol({
             elenext:'',
             eleprev:'',
             intervaltime:3000,
