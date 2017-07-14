@@ -87,7 +87,6 @@
             },500);
             var count=this.options.imgcount;
             this.imageNow=(this.imageNow+1)%count;
-            console.log(this.$element);
             this.$element.eq(this.imageNow).css({
                 "left":this.moveWidth+"px"
             });
@@ -103,7 +102,6 @@
             },500);
             var count=this.options.imgcount;
             this.imageNow=(this.imageNow+ count -1)%count;
-            console.log(this.$element);
             this.$element.eq(this.imageNow).css({
                 "left":-(this.moveWidth)+"px"
             });
